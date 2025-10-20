@@ -1,0 +1,121 @@
+Sessions (Store app sessions for multi-planning; e.g., Semestre 2 2024-2025).
+
+Columns:
+
+id (INTEGER PRIMARY KEY AUTOINCREMENT)
+name (TEXT, e.g., "Sem2_Principale_2025")
+academic_year (TEXT, e.g., "2024-2025")
+semester (TEXT, e.g., "SEMESTRE 2")
+session_type (TEXT, e.g., "Principale")
+created_at (TIMESTAMP DEFAULT CURRENT_TIMESTAMP)
+updated_at (TIMESTAMP)
+
+
+
+
+Configs (Configurable params per session; quotas per grade, surveillants/salle).
+
+Columns:
+
+id (INTEGER PRIMARY KEY AUTOINCREMENT)
+session_id (INTEGER FOREIGN KEY to Sessions.id)
+surveillants_per_salle (INTEGER DEFAULT 2)
+quotas_json (TEXT, e.g., '{"PR":4, "MA":6}')  # JSON for per-grade quotas
+voeux_weight (INTEGER DEFAULT 100)
+compactness_weight (INTEGER DEFAULT 10)
+updated_at (TIMESTAMP)
+
+
+
+
+Teachers (Imported from teachers file; with grade for quotas, code for responsible links).
+
+Columns:
+
+id (INTEGER PRIMARY KEY AUTOINCREMENT)
+session_id (INTEGER FOREIGN KEY to Sessions.id)
+nom_ens (TEXT)
+prenom_ens (TEXT)
+email_ens (TEXT)
+grade_code_ens (TEXT, e.g., "PR")
+code_smartex_ens (INTEGER)
+code_smartexam_ens (INTEGER)  # Latest responsible ID
+participe_surveillance (BOOLEAN DEFAULT TRUE)
+
+
+
+
+Voeux (Preferences; linked to teachers, with timestamps for FCFS).
+
+Columns:
+
+id (INTEGER PRIMARY KEY AUTOINCREMENT)
+teacher_id (INTEGER FOREIGN KEY to Teachers.id)
+semester_code (TEXT, e.g., "Semestre 2")
+session_libelle (TEXT, e.g., "Partiel")
+jour (INTEGER, e.g., 1)
+seance (TEXT, e.g., "S1")
+timestamp_order (INTEGER)  # For FCFS
+
+
+
+
+Creneaux (Imported from repartition; derive jour/seance/demand).
+
+Columns:
+
+id (INTEGER PRIMARY KEY AUTOINCREMENT)
+session_id (INTEGER FOREIGN KEY to Sessions.id)
+date_exam (DATE)
+h_debut (TIME)
+h_fin (TIME)
+session (TEXT, e.g., "P")
+type_ex (TEXT, e.g., "E")
+semestre (TEXT, e.g., "SEMESTRE 2")
+responsible_code (INTEGER)  # Link to teacher
+cod_salle (TEXT)
+jour (INTEGER)  # Derived
+seance (TEXT)  # Derived
+num_salles (INTEGER)  # Derived uniques per creneau
+num_surveillants (INTEGER)  # Derived (num_salles * config)
+
+
+
+
+Assignments (Generated; teacher to creneau).
+
+Columns:
+
+id (INTEGER PRIMARY KEY AUTOINCREMENT)
+teacher_id (INTEGER FOREIGN KEY to Teachers.id)
+creneau_id (INTEGER FOREIGN KEY to Creneaux.id)
+role (TEXT, e.g., "Surveillant")  # If future reserves added
+assigned_at (TIMESTAMP)
+
+
+
+
+Audits (Log edits/overrides).
+
+Columns:
+
+id (INTEGER PRIMARY KEY AUTOINCREMENT)
+session_id (INTEGER FOREIGN KEY to Sessions.id)
+assignment_id (INTEGER FOREIGN KEY to Assignments.id)
+action (TEXT, e.g., "Override")
+reason (TEXT)
+user_note (TEXT)
+timestamp (TIMESTAMP DEFAULT CURRENT_TIMESTAMP)
+
+
+
+
+Exports (Optional log of generated files).
+
+Columns:
+
+id (INTEGER PRIMARY KEY AUTOINCREMENT)
+session_id (INTEGER FOREIGN KEY to Sessions.id)
+type (TEXT, e.g., "Daily_List" or "Convocation")
+file_path (TEXT, e.g., "outputs/Affectation_S1.pdf")
+generated_at (TIMESTAMP)

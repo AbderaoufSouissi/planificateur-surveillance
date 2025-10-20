@@ -1,0 +1,29 @@
+# ISI Exam Scheduler - Complete Requirements
+# Includes all dependencies for the application + build tools
+
+# GUI Framework
+customtkinter>=5.2.0
+pillow>=10.0.0
+
+# Data Processing
+pandas>=1.5.0
+openpyxl>=3.0.0
+numpy>=1.24.0
+
+# Document Generation
+docxtpl>=0.16.0
+python-docx>=0.8.11
+docx2pdf>=0.1.8
+jinja2>=3.1.0
+
+# Constraint Solver (CRITICAL for exam_scheduler_db.py)
+ortools>=9.8.0
+
+# Database
+sqlite3  # Built-in with Python
+
+# Build Tool
+pyinstaller>=6.0.0
+
+# Optional - Drag & Drop Support
+tkinterdnd2>=0.3.0

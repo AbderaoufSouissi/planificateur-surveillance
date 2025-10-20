@@ -1,0 +1,227 @@
+2025-10-20 17:52:47,607 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi-project\ISI-Exam-Scheduler
+2025-10-20 17:53:06,639 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi-project\ISI-Exam-Scheduler
+2025-10-20 17:57:32,019 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi-project\ISI-Exam-Scheduler
+2025-10-20 19:07:01,425 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 19:08:24,151 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 19:08:29,159 [ERROR] ISIApp: Error during generation: SchedulerConfig.__init__() got an unexpected keyword argument 'quota_tolerance_pct'
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1426, in _run_generation_thread_impl
+    result = generate_planning_from_db(
+        session_id=self.app.current_session_id,
+    ...<5 lines>...
+        max_solve_time=config.get('max_solve_time', 60.0)
+    )
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\src\exam_scheduler_db.py", line 1971, in generate_planning_from_db
+    config = SchedulerConfig(
+        supervisors_per_room=supervisors_per_room,
+    ...<11 lines>...
+        max_gap_days=max_gap_days
+    )
+TypeError: SchedulerConfig.__init__() got an unexpected keyword argument 'quota_tolerance_pct'
+2025-10-20 19:08:29,161 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1426, in _run_generation_thread_impl
+    result = generate_planning_from_db(
+        session_id=self.app.current_session_id,
+    ...<5 lines>...
+        max_solve_time=config.get('max_solve_time', 60.0)
+    )
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\src\exam_scheduler_db.py", line 1971, in generate_planning_from_db
+    config = SchedulerConfig(
+        supervisors_per_room=supervisors_per_room,
+    ...<11 lines>...
+        max_gap_days=max_gap_days
+    )
+TypeError: SchedulerConfig.__init__() got an unexpected keyword argument 'quota_tolerance_pct'
+
+2025-10-20 19:08:38,160 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 19:08:40,805 [ERROR] ISIApp: Error during generation: SchedulerConfig.__init__() got an unexpected keyword argument 'quota_tolerance_pct'
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1426, in _run_generation_thread_impl
+    result = generate_planning_from_db(
+        session_id=self.app.current_session_id,
+    ...<5 lines>...
+        max_solve_time=config.get('max_solve_time', 60.0)
+    )
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\src\exam_scheduler_db.py", line 1971, in generate_planning_from_db
+    config = SchedulerConfig(
+        supervisors_per_room=supervisors_per_room,
+    ...<11 lines>...
+        max_gap_days=max_gap_days
+    )
+TypeError: SchedulerConfig.__init__() got an unexpected keyword argument 'quota_tolerance_pct'
+2025-10-20 19:08:40,806 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1426, in _run_generation_thread_impl
+    result = generate_planning_from_db(
+        session_id=self.app.current_session_id,
+    ...<5 lines>...
+        max_solve_time=config.get('max_solve_time', 60.0)
+    )
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\src\exam_scheduler_db.py", line 1971, in generate_planning_from_db
+    config = SchedulerConfig(
+        supervisors_per_room=supervisors_per_room,
+    ...<11 lines>...
+        max_gap_days=max_gap_days
+    )
+TypeError: SchedulerConfig.__init__() got an unexpected keyword argument 'quota_tolerance_pct'
+
+2025-10-20 19:09:07,482 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 19:09:12,011 [ERROR] ISIApp: Error during generation: SchedulerConfig.__init__() got an unexpected keyword argument 'quota_tolerance_pct'
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1426, in _run_generation_thread_impl
+    result = generate_planning_from_db(
+        session_id=self.app.current_session_id,
+    ...<5 lines>...
+        max_solve_time=config.get('max_solve_time', 60.0)
+    )
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\src\exam_scheduler_db.py", line 1971, in generate_planning_from_db
+    config = SchedulerConfig(
+        supervisors_per_room=supervisors_per_room,
+    ...<11 lines>...
+        max_gap_days=max_gap_days
+    )
+TypeError: SchedulerConfig.__init__() got an unexpected keyword argument 'quota_tolerance_pct'
+2025-10-20 19:09:12,012 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1426, in _run_generation_thread_impl
+    result = generate_planning_from_db(
+        session_id=self.app.current_session_id,
+    ...<5 lines>...
+        max_solve_time=config.get('max_solve_time', 60.0)
+    )
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\src\exam_scheduler_db.py", line 1971, in generate_planning_from_db
+    config = SchedulerConfig(
+        supervisors_per_room=supervisors_per_room,
+    ...<11 lines>...
+        max_gap_days=max_gap_days
+    )
+TypeError: SchedulerConfig.__init__() got an unexpected keyword argument 'quota_tolerance_pct'
+
+2025-10-20 19:11:02,174 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 19:43:04,094 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 19:50:19,130 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 19:50:51,413 [ERROR] ISIApp: Error during generation: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1489, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+2025-10-20 19:50:51,413 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1489, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+
+2025-10-20 20:53:24,218 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 20:56:17,394 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 20:56:49,030 [ERROR] ISIApp: Error during generation: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+2025-10-20 20:56:49,031 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+
+2025-10-20 20:56:49,976 [ERROR] ISIApp: Error during generation: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+2025-10-20 20:56:49,976 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+
+2025-10-20 20:57:01,547 [ERROR] ISIApp: Error during generation: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+2025-10-20 20:57:01,547 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+
+2025-10-20 20:57:02,503 [ERROR] ISIApp: Error during generation: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+2025-10-20 20:57:02,503 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+
+2025-10-20 20:57:29,220 [ERROR] ISIApp: Error during generation: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+2025-10-20 20:57:29,261 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+
+2025-10-20 20:57:29,864 [ERROR] ISIApp: Error during generation: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+2025-10-20 20:57:29,864 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+
+2025-10-20 20:57:40,948 [ERROR] ISIApp: Error during generation: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+2025-10-20 20:57:40,949 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1485, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+
+2025-10-20 21:03:52,538 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 21:04:11,611 [ERROR] ISIApp: Error during generation: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1429, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+2025-10-20 21:04:11,611 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1429, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+
+2025-10-20 21:07:16,884 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 21:09:48,120 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 21:14:04,009 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 21:15:59,678 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 21:21:16,434 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 22:00:47,181 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 22:06:17,735 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 22:10:07,697 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 22:14:18,081 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 22:17:29,667 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 22:37:29,357 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 22:37:43,075 [ERROR] ISIApp: Error during generation: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1429, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+2025-10-20 22:37:43,075 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1429, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+
+2025-10-20 22:40:28,148 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 22:40:35,418 [ERROR] ISIApp: Error during generation: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1429, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+2025-10-20 22:40:35,419 [DEBUG] ISIApp: Traceback (most recent call last):
+  File "c:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler\tkinter_isi\screens\import_and_generate.py", line 1429, in _run_generation_thread_impl
+    raise Exception("La génération a échoué. Veuillez vérifier les logs pour plus de détails.")
+Exception: La génération a échoué. Veuillez vérifier les logs pour plus de détails.
+
+2025-10-20 22:43:36,373 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
+2025-10-20 23:22:06,814 [DEBUG] ISIApp: ImportAndGenerateScreen initialized, base_dir=C:\Users\ghait\Desktop\isi\ISI-Exam-Scheduler
