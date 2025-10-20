@@ -1,7 +1,7 @@
 # ISI-Exam-Scheduler
 
 Lien GitHub du projet (pour l'évaluation de la qualité du code) :
-https://github.com/AbderaoufSouissi/ISI-Exam-Scheduler
+[https://github.com/AbderaoufSouissi/ISI-Exam-Scheduler](https://github.com/AbderaoufSouissi/planificateur-surveillance)
 
 ## Description
 ISI-Exam-Scheduler est une application Python/Tkinter destinée à la génération et gestion des plannings d'examens (importation des voeux, génération d'horaires, exports, rapports). Le dépôt contient le code source (sous `src/`), des scripts de vérification et des configurations pour empaquetage.
